@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-land-hdpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-land-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-hdpi_screen.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\drawable-port-hdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-land-ldpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-land-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-land-mdpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-land-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-mdpi_screen.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-land-xhdpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-land-xhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_icon.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
+        "source": "C:\\quasar-songbooks-master\\src-cordova\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    }
+]

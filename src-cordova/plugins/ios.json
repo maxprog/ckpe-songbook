@@ -1,0 +1,24 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.maxprog.songbooks"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "com.maxprog.songbooks"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.maxprog.songbooks"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.maxprog.songbooks"
+    }
+  },
+  "dependent_plugins": {}
+}

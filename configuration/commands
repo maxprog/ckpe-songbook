@@ -1,0 +1,8 @@
+quasar build -m cordova -T android -t mat
+
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore ../src-cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk com.maxprog.songbooks
+
+
+
+~/Library/Android/sdk/build-tools/23.0.3/zipalign -v 4 ../src-cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk com.maxprog.songbooks.apk
