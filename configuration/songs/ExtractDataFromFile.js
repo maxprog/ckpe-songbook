@@ -22,11 +22,11 @@ rl.on('line', (line) => {
       if(line.indexOf('$')!==-1)
       {
 
-        var id = lines[1];
+        var id = lines[1] ? lines[1].replace('\t','') : lines[1];
         var songTxt=lines.slice(2,lines.length);
         var content = ['<?xml version="1.0" encoding="UTF-8"?>',
                       '<song>',
-                      '<title>'+lines[0]+'</title>',
+                      '<title>'+lines[0].replace('\t','')+'</title>',
                       '<id>'+id+'</id>',
                       '<lyrics>',
                       songTxt.join('\n'),
@@ -43,7 +43,7 @@ rl.on('line', (line) => {
 
         global.tab.push({
           id: id,
-         name: lines[0],
+         name: lines[0].replace('\t',''),
          autor:''
        });
 
