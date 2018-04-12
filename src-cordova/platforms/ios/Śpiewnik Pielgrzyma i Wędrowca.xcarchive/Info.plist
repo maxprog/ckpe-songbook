@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Śpiewnik Pielgrzyma i Wędrowca.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.maxprog.songbooks</string>
+		<key>CFBundleShortVersionString</key>
+		<string>2.3.0</string>
+		<key>CFBundleVersion</key>
+		<string>2.3.0</string>
+		<key>SigningIdentity</key>
+		<string>iPhone Developer: Grzegorz Kroczek (Y96WQ2N9SL)</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2018-03-29T13:31:20Z</date>
+	<key>Name</key>
+	<string>Śpiewnik Pielgrzyma i Wędrowca</string>
+	<key>SchemeName</key>
+	<string>Śpiewnik Pielgrzyma i Wędrowca</string>
+</dict>
+</plist>

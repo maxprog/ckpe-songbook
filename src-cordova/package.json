@@ -1,7 +1,7 @@
 {
     "name": "com.maxprog.ckpe",
     "displayName": "Śpiewnik CKPE",
-    "version": "1.0",
+    "version": "1.0.5",
     "description": "Śpiewnik CKPE",
     "main": "index.js",
     "scripts": {

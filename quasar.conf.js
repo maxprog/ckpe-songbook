@@ -36,9 +36,9 @@ module.exports = function (ctx) {
     pwa: {
       cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',
       manifest: {
-        name: 'ckpe',
-        short_name: 'Śpiewnik CKPE',
-        description: 'Śpiewnik CKPE',
+        name: 'songbooks',
+        short_name: 'Śpiewnik Pielgrzyma i Wędrowca',
+        description: 'Śpiewnik Pielgrzyma i Wędrowca',
         icons: [
           {
             'src': 'statics/icons/icon-128x128.png',

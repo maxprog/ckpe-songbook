@@ -55,15 +55,9 @@ store,
 
 
 
-  
-document.addEventListener('deviceready', () => {
-Vue.prototype.$q.cordova = window.cordova
-
 
 
 new Vue(app)
 
 
-
-}, false) // on deviceready
 
