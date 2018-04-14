@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
 import showcase from './showcase'
-
 
 Vue.use(Vuex)
 
@@ -17,7 +15,6 @@ if (process.env.DEV && module.hot) {
     const newShowcase = require('./showcase').default
     store.hotUpdate({ modules: { showcase: newShowcase } })
   })
-
 }
 
 export default store

@@ -1,7 +1,4 @@
 <template>
-
-
-
   <q-layout view="Lhh lpr lFf">
     <q-layout-header reveal>
 
@@ -22,9 +19,9 @@
             style="font-size: 2rem; margin-right: 5px;"
             :name="pageMeta.icon"
           />
-         {{pageMeta.title}}
+          {{ pageMeta.title }}
         </q-toolbar-title>
-         <q-btn flat dense v-if="!$q.platform.within.iframe" class="q-mr-sm"  @click="$router.replace('/')" icon="home"/>
+        <q-btn flat dense v-if="!$q.platform.within.iframe" class="q-mr-sm" @click="$router.replace('/')" icon="home"/>
 
         <q-btn
           flat
@@ -51,27 +48,27 @@
       >
         <div class="row flex-center bg-white" style="height: 100px">
 
-          <q-icon name="ion-ios-musical-note" color="primary" style="font-size: 54px; "></q-icon>
+          <q-icon name="ion-ios-musical-note" color="primary" style="font-size: 54px; "/>
           <div class="caption q-ml-md">
-       Śpiewniki Chrześcijańskie
-</br>
+            Śpiewniki Chrześcijańskie
+            <br>
 
           </div>
         </div>
         <q-list no-border>
           <q-item
-           @click="drawerState = !drawerState"
+            @click="drawerState = !drawerState"
             to="/"
             exact
             replace
           >
 
             <q-item-side icon="home" />
-         <q-item-main label="Strona główna" />
+            <q-item-main label="Strona główna" />
           </q-item>
           <q-item-separator />
 
-        <template v-for="category in categories">
+          <template v-for="category in categories">
             <q-list-header :key="`header-${category.title}`">
               {{ category.title }}
             </q-list-header>
@@ -90,23 +87,23 @@
             <q-item-separator :key="`separator-${category.title}`" />
           </template>
           <q-item v-if="!$q.platform.is.ios" @click.native="exitApp()">
-          <q-item-side>
+            <q-item-side>
 
-            <q-item-tile icon="ion-android-exit"/>
-          </q-item-side>
-          <q-item-main>
+              <q-item-tile icon="ion-android-exit"/>
+            </q-item-side>
+            <q-item-main>
 
-            <q-item-tile label>Zamknij</q-item-tile>
+              <q-item-tile label>Zamknij</q-item-tile>
 
-          </q-item-main>
-        </q-item>
+            </q-item-main>
+          </q-item>
 
         </q-list>
       </q-scroll-area>
     </q-layout-drawer>
 
     <q-page-container>
-   <!--   <transition
+      <!--   <transition
         enter-active-class="animated fadeIn"
         leave-active-class="animated fadeOut"
         mode="out-in"
@@ -114,7 +111,7 @@
         @leave="resetScroll"
       >
       -->
-        <router-view />
+      <router-view />
     <!--  </transition> -->
     </q-page-container>
   </q-layout>
@@ -150,25 +147,21 @@ export default {
     ])
   },
   methods: {
-    toggleDroverState()
-    {
-     this.drawerState=!this.drawerState;
+    toggleDroverState () {
+      this.drawerState = !this.drawerState
     },
-    exitApp()
-    {
-       // app.exitApp();
+    exitApp () {
+      // app.exitApp();
 
-     if (navigator && navigator.device) {
-            navigator.device.exitApp();
-        }
-        else
-      if (navigator &&  navigator.app) {
-            navigator.app.exitApp();
-        }
-
-
+      if (navigator && navigator.device) {
+        navigator.device.exitApp()
+      }
+      else
+      if (navigator && navigator.app) {
+        navigator.app.exitApp()
+      }
     },
-      toggleFullscreen () {
+    toggleFullscreen () {
       this.$q.fullscreen.toggle()
     },
     resetScroll (el, done) {

@@ -1,9 +1,8 @@
 <template>
   <div class="fixed-center text-center">
     <p
-    icon="settings"
-    >
-   </p>
+      icon="settings"
+    />
     <p class="text-faded">Nie znaleziono strony...<strong>(404)</strong></p>
     <q-btn
       color="secondary"

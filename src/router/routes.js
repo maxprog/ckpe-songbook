@@ -6,7 +6,7 @@ function lazyLoad (path, meta) {
   return {
     path,
     meta,
-    component: () => import('pages/showcase/' + path.replace(/ckpe/gi,'table'))
+    component: () => import('pages/showcase/' + path.replace(/ckpe/gi, 'table'))
   }
 }
 
@@ -32,8 +32,7 @@ categories.forEach(category => {
     return
   }
   category.features.forEach(feature => {
-
-    let path = category.hash + '/' + feature.hash;
+    let path = category.hash + '/' + feature.hash
 
     if (!feature.tabs) {
       showcase.children.push(lazyLoad(path, feature))
@@ -62,6 +61,5 @@ categories.forEach(category => {
 routes.push(showcase)
 
 routes.push({ path: '*', component: () => import('pages/error404.vue') })
-
 
 export default routes

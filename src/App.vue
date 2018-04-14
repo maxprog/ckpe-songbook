@@ -1,6 +1,6 @@
 <template>
   <div class="q-app">
- <!--   <transition
+    <!--   <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"
       mode="out-in"
@@ -8,7 +8,7 @@
       @leave="resetScroll"
     >
     -->
-      <router-view />
+    <router-view />
   <!--  </transition> -->
   </div>
 </template>

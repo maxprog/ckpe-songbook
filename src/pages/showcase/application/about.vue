@@ -10,118 +10,96 @@
 
         <div class="ellipsis">Śpiewnik Pilegrzyma i Śpiewnik Wędrowiec</div>
 
-
       </q-card-title>
       <q-card-main>
         <p>Pieśni Chrześcijańskie</p>
-         <p> <b>Wersja: 2.2</b></p>
+        <p> <b>Wersja: 2.2</b></p>
 
         <q-tabs color="secondary" glossy align="justify">
 
-        <q-tab default name="company" slot="title" icon="people" label="Firma" />
-        <q-tab name="person" slot="title" icon="person" label="Autor" />
-        <q-tab-pane name="company">
-         <q-list>
-            <q-item>
-          <q-item-side>
-            <q-item-tile color="primary" icon="people" />
-          </q-item-side>
-          <q-item-main>
-             <q-item-tile sublabel>Company</q-item-tile>
-            <q-item-tile label>JRB System</q-item-tile>
+          <q-tab default name="company" slot="title" icon="people" label="Firma" />
+          <q-tab name="person" slot="title" icon="person" label="Autor" />
+          <q-tab-pane name="company">
+            <q-list>
+              <q-item>
+                <q-item-side>
+                  <q-item-tile color="primary" icon="people" />
+                </q-item-side>
+                <q-item-main>
+                  <q-item-tile sublabel>Company</q-item-tile>
+                  <q-item-tile label>JRB System</q-item-tile>
 
-          </q-item-main>
-        </q-item>
-          <q-item>
-          <q-item-side>
-            <q-item-tile color="primary" icon="ion-ios-world-outline" />
-          </q-item-side>
-          <q-item-main>
-            <q-item-tile sublabel>Webpage</q-item-tile>
-            <q-item-tile label>www.jrbsystem.com</q-item-tile>
+                </q-item-main>
+              </q-item>
+              <q-item>
+                <q-item-side>
+                  <q-item-tile color="primary" icon="ion-ios-world-outline" />
+                </q-item-side>
+                <q-item-main>
+                  <q-item-tile sublabel>Webpage</q-item-tile>
+                  <q-item-tile label>www.jrbsystem.com</q-item-tile>
 
-          </q-item-main>
-        </q-item>
-         <q-item>
-          <q-item-side>
-            <q-item-tile color="primary" icon="mail" />
-          </q-item-side>
-          <q-item-main>
-            <q-item-tile sublabel>Email</q-item-tile>
-            <q-item-tile label>info@jrbsystem.com</q-item-tile>
+                </q-item-main>
+              </q-item>
+              <q-item>
+                <q-item-side>
+                  <q-item-tile color="primary" icon="mail" />
+                </q-item-side>
+                <q-item-main>
+                  <q-item-tile sublabel>Email</q-item-tile>
+                  <q-item-tile label>info@jrbsystem.com</q-item-tile>
 
-          </q-item-main>
-        </q-item>
+                </q-item-main>
+              </q-item>
 
-         <q-item>
-          <q-item-side>
-            <q-item-tile color="primary" icon="ion-android-call" />
-          </q-item-side>
-          <q-item-main>
-            <q-item-tile sublabel>Mobile</q-item-tile>
-            <q-item-tile label>+48 506 402 746</q-item-tile>
+              <q-item>
+                <q-item-side>
+                  <q-item-tile color="primary" icon="ion-android-call" />
+                </q-item-side>
+                <q-item-main>
+                  <q-item-tile sublabel>Mobile</q-item-tile>
+                  <q-item-tile label>+48 506 402 746</q-item-tile>
 
-          </q-item-main>
-        </q-item>
-      </q-list>
-        </q-tab-pane>
-        <q-tab-pane name="person">
+                </q-item-main>
+              </q-item>
+            </q-list>
+          </q-tab-pane>
+          <q-tab-pane name="person">
 
-          <q-list>
+            <q-list>
 
-        <q-item>
-          <q-item-side>
-            <q-item-tile color="primary" icon="person" />
-          </q-item-side>
-          <q-item-main>
-              <q-item-tile sublabel>Software Developer</q-item-tile>
-            <q-item-tile label>Emanuel Trzcionkowski</q-item-tile>
+              <q-item>
+                <q-item-side>
+                  <q-item-tile color="primary" icon="person" />
+                </q-item-side>
+                <q-item-main>
+                  <q-item-tile sublabel>Software Developer</q-item-tile>
+                  <q-item-tile label>Emanuel Trzcionkowski</q-item-tile>
 
+                </q-item-main>
+              </q-item>
+              <q-item>
+                <q-item-side>
+                  <q-item-tile color="primary" icon="person" />
+                </q-item-side>
+                <q-item-main>
+                  <q-item-tile sublabel>Software Developer</q-item-tile>
+                  <q-item-tile label>Greg (Grzegorz) Kroczek</q-item-tile>
+                </q-item-main>
+              </q-item>
 
-          </q-item-main>
-        </q-item>
-   </q-item>
-          <q-item>
-          <q-item-side>
-            <q-item-tile color="primary" icon="person" />
-          </q-item-side>
-          <q-item-main>
-            <q-item-tile sublabel>Software Developer</q-item-tile>
+            </q-list>
+          </q-tab-pane>
 
-            <q-item-tile label>Greg (Grzegorz) Kroczek</q-item-tile>
-
-          </q-item-main>
-        </q-item>
-
-
-      </q-list>
-        </q-tab-pane>
-
-      </q-tabs>
-
-
-
+        </q-tabs>
 
       </q-card-main>
       <q-card-separator />
       <q-card-actions align="center">
-          <p class="text-faded text-center">Copyright by JRB System</p>
-
+        <p class="text-faded text-center">Copyright by JRB System</p>
 
       </q-card-actions>
     </q-card>
-
-
-
-
-
-
-
-
-
-
-
-
 
   </q-page>
 </template>

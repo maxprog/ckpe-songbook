@@ -3,16 +3,15 @@
   <q-page padding class="page-showcase">
     <div class="showcase-top text-center">
 
-
       <p class="caption">
-    Witamy w aplikacji Śpiewniki
+        Witamy w aplikacji Śpiewniki
         <br>
 
       </p>
     </div>
 
-  <div class="row justify-center">
-   <div style="width: 850px; max-width: 90vw;" class="row">
+    <div class="row justify-center">
+      <div style="width: 850px; max-width: 90vw;" class="row">
         <div
           v-for="category in list"
           :key="category.hash"
@@ -21,7 +20,7 @@
 
           <div class="card text-center category-link text-primary" @click="show(category)">
             <q-icon :name="category.icon" />
-           <p class="caption">{{ category.title }}</p>
+            <p class="caption">{{ category.title }}</p>
           </div>
         </div>
       </div>
@@ -29,7 +28,7 @@
 
     <q-page-sticky v-show="category" position="bottom-right" :offset="[18, 18]">
       <q-btn round color="secondary" @click="category = false;" class="animate-pop">
-       <q-icon name="ion-reply" />
+        <q-icon name="ion-reply" />
       </q-btn>
     </q-page-sticky>
   </q-page>
@@ -44,14 +43,13 @@ export default {
   data () {
     return {
       category: false,
-hash:''
+      hash: ''
 
     }
   },
   computed: {
     list () {
-
-      return this.category || [].concat(categories[0].features,categories[1])
+      return this.category || [].concat(categories[0].features, categories[1])
     },
 
     ...mapState('showcase', [
@@ -60,17 +58,16 @@ hash:''
   },
   methods: {
     show (link) {
-this.link=link;
+      this.link = link
 
       if (link.features) {
         this.category = link.features
         this.hash = link.hash
 
-
         return
       }
 
-      this.$router.push(`/${( link.tabs )? link.parent_hash : this.hash}/${link.hash}`)
+      this.$router.push(`/${(link.tabs) ? link.parent_hash : this.hash}/${link.hash}`)
     }
   }
 }

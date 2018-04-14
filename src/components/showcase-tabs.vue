@@ -18,7 +18,6 @@
       :alert="tab.status !== void 0"
     />
 
-
   </q-tabs>
 
 </template>
