@@ -132,13 +132,12 @@
 </template>
 
 <script>
-import tableData from 'assets/table-data-pielgrzym'
+import tableData from 'assets/table-data-ckpe'
 import { mapState } from 'vuex'
 import { QSpinnerFacebook, QSpinnerGears } from 'quasar'
 import xml2json from 'assets/html2json'
 import axios from 'axios'
-import pielgrzymTableData from 'assets/table-data-pielgrzym'
-import wedrowiecTableData from 'assets/table-data-wedrowiec'
+
 
 export default {
   data () {
@@ -235,19 +234,8 @@ export default {
     },
      reloadData()
 {
-  if(this.pageMeta.songbook=='pielgrzym') this.songsTableData =  pielgrzymTableData;
-      else
-      if(this.pageMeta.songbook=='wedrowiec') this.songsTableData =  wedrowiecTableData;
+ this.songsTableData =  this.tableData;
 
-      this.tableData = this.songsTableData;//.map((item)=>{ return item.id});
-
-   /*   this.$q.notify({
-              color: 'positive',
-              position: 'bottom',
-              message: 'Załadowano pieśni',
-              icon: 'report_problem'
-            });
-            */
 
 },
        showSong(row){

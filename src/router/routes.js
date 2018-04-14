@@ -6,7 +6,7 @@ function lazyLoad (path, meta) {
   return {
     path,
     meta,
-    component: () => import('pages/showcase/' + path.replace(/pielgrzym|wedrowiec/gi,'table'))
+    component: () => import('pages/showcase/' + path.replace(/ckpe/gi,'table'))
   }
 }
 

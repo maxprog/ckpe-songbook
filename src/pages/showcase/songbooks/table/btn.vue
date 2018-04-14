@@ -85,7 +85,11 @@
           </q-toolbar-title>
         </q-toolbar>
         <div class="layout-padding">
-          <p v-for="line in selectedSong.song"> {{line}}</p>
+          <div v-for="line in selectedSong.song">
+
+          <p><div class="inline">{{splitRow(line,0)}}</div><div class="inline float-right">{{splitRow(line,1)}}</div></p>
+
+            </div>
         </div>
       </q-modal-layout>
     </q-modal>
@@ -100,8 +104,8 @@ import { QSpinnerFacebook, QSpinnerGears } from 'quasar'
 import { mapState } from 'vuex'
 import xml2json from 'assets/html2json'
 import axios from 'axios'
-import pielgrzymTableData from 'assets/table-data-pielgrzym'
-import wedrowiecTableData from 'assets/table-data-wedrowiec'
+import ckpeTableData from 'assets/table-data-ckpe'
+
 
 
 
@@ -178,6 +182,13 @@ export default {
 
   methods: {
 
+    splitRow(str,idx)
+    {
+     // console.log('str=',str);
+      var tab = str.split('#');
+      return tab[idx];
+    },
+
     filterRecords(val)
     {
 
@@ -210,7 +221,7 @@ export default {
         }
 
         done()
-      }, 50)
+      }, 5)
     },
     cutZero(str)
     {
@@ -225,9 +236,8 @@ this.layoutModal=false;
 },
 reloadData()
 {
-  if(this.pageMeta.songbook=='pielgrzym') this.songsTableData =  pielgrzymTableData;
-      else
-      if(this.pageMeta.songbook=='wedrowiec') this.songsTableData =  wedrowiecTableData;
+ this.songsTableData =  ckpeTableData;
+
 
       this.ListSongs = this.songsTableData.slice(0,this.pageLength);
 
@@ -324,6 +334,8 @@ this.showProgress();
 <style lang="stylus">
 
 @import '~variables'
+.inline
+  display inline
 .play-backtotop
   color white
   position fixed

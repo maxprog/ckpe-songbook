@@ -26,7 +26,7 @@ rl.on('line', (line) => {
         var songTxt=lines.slice(2,lines.length);
         var content = ['<?xml version="1.0" encoding="UTF-8"?>',
                       '<song>',
-                      '<title>'+lines[0].replace('\t','')+'</title>',
+                      '<title>'+id+'. '+lines[0].replace('\t','')+'</title>',
                       '<id>'+id+'</id>',
                       '<lyrics>',
                       songTxt.join('\n'),
@@ -43,7 +43,7 @@ rl.on('line', (line) => {
 
         global.tab.push({
           id: id,
-         name: lines[0].replace('\t',''),
+         name: id+ '. ' +lines[0].replace('\t',''),
          autor:''
        });
 

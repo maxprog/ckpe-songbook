@@ -6,50 +6,27 @@ export default [
 
     features: [
       {
-        title: 'Śpiewnik Pielgrzyma',
+        title: 'Śpiewnik CKPE',
         icon: 'ion-music-note',
         parent_hash: 'songbooks',
-        hash: 'pielgrzym',
-        songbook: 'pielgrzym',
+        hash: 'ckpe',
+        songbook: 'ckpe',
         iframeTabs: true,
         tabs: [
           {
-            title: 'Śpiewnik Pielgrzyma',
+            title: 'Śpiewnik CKPE',
             label: 'Numery pieśni',
             icon: 'ion-grid',
             hash: 'btn'
           },
           {
-            title: 'Śpiewnik Pielgrzyma',
-            label: 'Lista pieśni',
-            icon: 'list',
-            hash: 'table-features'
-          }
-        ]
-      },
-      {
-        title: 'Wędrowiec',
-        icon: 'ion-music-note',
-        parent_hash: 'songbooks',
-        hash: 'wedrowiec',
-        songbook: 'wedrowiec',
-        iframeTabs: true,
-        tabs: [
-          {
-            title: 'Wędrowiec',
-            label: 'Numery pieśni',
-            icon: 'ion-grid',
-            hash: 'btn'
-          },
-          {
-            title: 'Wędrowiec',
+            title: 'Śpiewnik CKPE',
             label: 'Lista pieśni',
             icon: 'list',
             hash: 'table-features'
           }
         ]
       }
-
     ]
   },
 
