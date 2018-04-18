@@ -57,6 +57,7 @@
           label="Kolumny"
         />
         -->
+        <!-- 
         <q-select
           color="secondary"
           v-model="separator"
@@ -68,7 +69,7 @@
             { label: 'Brak', value: 'none' }
           ]"
           hide-underline
-        />
+        /> -->
 
       </template>
       <q-tr slot="body" slot-scope="props" :props="props" @click.native="showSong(props.row)" class="cursor-pointer">
@@ -164,7 +165,7 @@ export default {
       pagination: {
         page: 2
       },
-      paginationControl: { rowsPerPage: 20, page: 1 },
+      paginationControl: { rowsPerPage: 263, page: 1 },
       loading: false,
       dark: false,
       selectedSecond: [

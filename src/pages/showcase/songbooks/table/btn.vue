@@ -10,7 +10,7 @@
 
         <q-btn v-for="(item) in ListSongs" :outline="isOutline" push rounded color="primary"
                :class="!shortDescription || filterFullDescription ? 'full-width' : 'btn-fixed-width'"
-               :key="`song_${item.id}`"
+               :key="item.id"
                :label="!shortDescription || filterFullDescription ? `${cutZero(item.name)}` : `${cutZero(item.id)}`"
                @click="showSong(item.id)"
         />
@@ -79,7 +79,7 @@
           </q-toolbar-title>
         </q-toolbar>
         <div class="layout-padding">
-          <div style="padding-bottom:10px" v-for="(line,index) in selectedSong.song" :key="index">
+          <div style="padding-bottom:10px;font-size:24px" v-for="(line,index) in selectedSong.song" :key="index">
 
             <div class="inline">{{ splitRow(line,0) }}</div><div class="inline float-right">{{ splitRow(line,1) }}</div>
 
@@ -190,7 +190,7 @@ export default {
         }
 
         done()
-      }, 5)
+      }, 1)
     },
     cutZero (str) {
       return str.replace(/^0+/, '')

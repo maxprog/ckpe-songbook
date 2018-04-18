@@ -45,16 +45,16 @@
   },
   "installed_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.maxprog.songbooks"
+      "PACKAGE_NAME": "com.maxprog.ckpe"
     },
     "cordova-plugin-fullscreen": {
-      "PACKAGE_NAME": "com.maxprog.songbooks"
+      "PACKAGE_NAME": "com.maxprog.ckpe"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.maxprog.songbooks"
+      "PACKAGE_NAME": "com.maxprog.ckpe"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.maxprog.songbooks"
+      "PACKAGE_NAME": "com.maxprog.ckpe"
     }
   },
   "dependent_plugins": {},

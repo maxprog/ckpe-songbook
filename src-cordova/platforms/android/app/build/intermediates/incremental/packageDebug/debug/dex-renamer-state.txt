@@ -1,4 +1,4 @@
-#Sat Apr 14 15:33:00 CEST 2018
-base.0=/Users/grzegorzkroczek/Desktop/quasar-ckpe/src-cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Wed Apr 18 21:12:52 CEST 2018
+base.0=C\:\\Projekty\\ckpe-songbook\\src-cordova\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

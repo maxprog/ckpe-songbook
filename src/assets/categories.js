@@ -15,17 +15,17 @@ export default [
         tabs: [
           {
             title: 'Śpiewnik CKPE',
-            label: 'Numery pieśni',
-            icon: 'ion-grid',
-            hash: 'btn'
-          },
-          {
-            title: 'Śpiewnik CKPE',
             label: 'Lista pieśni',
             icon: 'list',
             hash: 'table-features'
+          },
+          {
+            title: 'Śpiewnik CKPE',
+            label: 'Numery pieśni',
+            icon: 'ion-grid',
+            hash: 'btn'
           }
-        ]
+                 ]
       }
     ]
   },
@@ -37,7 +37,12 @@ export default [
     parent_hash: 'songbooks',
 
     features: [
+      {
+        title: 'Ustawienia',
+        icon: 'ion-wrench',
+        hash: 'settings'
 
+      },
       {
         title: 'O Aplikacji',
         icon: 'contacts',
