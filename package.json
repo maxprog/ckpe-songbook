@@ -1,8 +1,8 @@
 {
     "name": "ckpe",
     "version": "1.0.6",
-    "description": "Śpiewnik CKPE",
-    "productName": "Śpiewnik CKPE",
+    "description": "Śpiewnik Chrześcijański",
+    "productName": "Śpiewnik Chrześcijański",
     "cordovaId": "com.maxprog.ckpe",
     "author": "JRB System <info@jrbsystem.com>",
     "private": true,

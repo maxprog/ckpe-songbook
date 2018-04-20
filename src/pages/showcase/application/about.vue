@@ -6,14 +6,13 @@
       </q-card-media>
 
       <q-card-title class="relative-position">
-        <q-btn fab color="primary" icon="place" class="absolute" style="top: 0; right: 8px; transform: translateY(-50%);" />
+        <!--<q-btn fab color="primary" icon="place" class="absolute" style="top: 0; right: 8px; transform: translateY(-50%);" />-->
 
-        <div class="ellipsis">Śpiewnik Pilegrzyma i Śpiewnik Wędrowiec</div>
+        <div class="ellipsis">Śpiewnik Chrześcijański</div>
 
       </q-card-title>
       <q-card-main>
-        <p>Pieśni Chrześcijańskie</p>
-        <p> <b>Wersja: 2.2</b></p>
+        <p> <b>Wersja: 1.0</b></p>
 
         <q-tabs color="secondary" glossy align="justify">
 

@@ -2,36 +2,44 @@
   <q-page padding class="card-examples row justify-center items-start">
     <q-card inline class="q-ma-sm">
       <q-card-title>
-        Title
+        Ustawienia aplikacji
       </q-card-title>
       <q-list separator>
-        <q-collapsible icon="explore" label="First">
+        <q-collapsible icon="explore" label="Rozmiar czcionki">
           <div>
-            Lorem ipsum dolor sit amet...
+           Duży
+            <br>
+            Normalny
+            <br>
+            Mały
           </div>
         </q-collapsible>
 
-        <q-collapsible icon="perm_identity" label="Second">
+        <q-collapsible icon="perm_identity" label="Kolorystyka">
           <div>
-            Lorem ipsum dolor sit amet...
+            Tryb dzienny
+            <br>
+            Tryb nocny
           </div>
         </q-collapsible>
 
-        <q-collapsible icon="shopping_cart" label="Third">
+        <q-collapsible icon="shopping_cart" label="Akordy">
           <div>
-            Lorem ipsum dolor sit amet...
+            Włącz
+            <br>
+            Wyłącz
           </div>
         </q-collapsible>
       </q-list>
     </q-card>
-    <q-card class="bigger q-ma-sm">
-      <!--
+    <!--<q-card class="bigger q-ma-sm">
+      
       <q-card-media>
         <img src="statics/mountains.jpg">
-      </q-card-media>-->
+      </q-card-media>
       
       <q-card-title class="relative-position">
-        <!--<q-btn fab color="primary" icon="place" class="absolute" style="top: 0; right: 8px; transform: translateY(-50%);" />-->
+        <q-btn fab color="primary" icon="place" class="absolute" style="top: 0; right: 8px; transform: translateY(-50%);" />
 
         <div class="ellipsis">Ustawienia</div>
 
@@ -121,7 +129,7 @@
         <p class="text-faded text-center">Copyright by JRB System</p>
 
       </q-card-actions>
-    </q-card>
+    </q-card>-->
 
   </q-page>
 </template>

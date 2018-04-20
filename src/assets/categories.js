@@ -1,12 +1,12 @@
 export default [
   {
-    title: 'Śpiewniki',
+    title: 'Śpiewnik',
     icon: 'ion-ios-musical-note',
     hash: 'songbooks',
 
     features: [
       {
-        title: 'Śpiewnik CKPE',
+        title: 'Śpiewnik',
         icon: 'ion-music-note',
         parent_hash: 'songbooks',
         hash: 'ckpe',
@@ -14,13 +14,13 @@ export default [
         iframeTabs: true,
         tabs: [
           {
-            title: 'Śpiewnik CKPE',
+            title: 'Śpiewnik',
             label: 'Lista pieśni',
             icon: 'list',
             hash: 'table-features'
           },
           {
-            title: 'Śpiewnik CKPE',
+            title: 'Śpiewnik',
             label: 'Numery pieśni',
             icon: 'ion-grid',
             hash: 'btn'
