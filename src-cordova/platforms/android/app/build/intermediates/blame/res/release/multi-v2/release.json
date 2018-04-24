@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\projekty\\ckpe-songbook\\src-cordova\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
+            "outputFile": "/Users/grzegorzkroczek/Desktop/ckpe-songbook/src-cordova/platforms/android/app/build/intermediates/res/merged/release/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\projekty\\ckpe-songbook\\src-cordova\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "/Users/grzegorzkroczek/Desktop/ckpe-songbook/src-cordova/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "-1,2,-1",
-                        "startColumns": "-1,4,-1",
-                        "startOffsets": "-1,55,-1",
-                        "endColumns": "-1,60,-1",
-                        "endOffsets": "-1,111,-1"
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "175,55,116",
+                        "endColumns": "63,60,58",
+                        "endOffsets": "234,111,170"
                     },
                     "to": {
                         "startLines": "2,3,4",

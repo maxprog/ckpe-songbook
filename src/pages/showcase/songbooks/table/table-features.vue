@@ -46,32 +46,7 @@
           placeholder="Szukaj"
         />
       </template>
-      <template slot="top-right" slot-scope="props">
-        <!--   <q-table-columns
 
-          color="secondary"
-          :dark="dark"
-          class="q-mr-sm"
-          v-model="visibleColumns"
-          :columns="columns"
-          label="Kolumny"
-        />
-        -->
-        <!-- 
-        <q-select
-          color="secondary"
-          v-model="separator"
-          :dark="dark"
-          :options="[
-            { label: 'Horyzontalnie', value: 'horizontal' },
-            { label: 'Wertykalnie', value: 'vertical' },
-            { label: 'Komórka', value: 'cell' },
-            { label: 'Brak', value: 'none' }
-          ]"
-          hide-underline
-        /> -->
-
-      </template>
       <q-tr slot="body" slot-scope="props" :props="props" @click.native="showSong(props.row)" class="cursor-pointer">
         <q-td v-for="col in props.cols" :key="col.name" :props="props">
           {{ cutZero(col.value) }}
@@ -104,7 +79,7 @@
             dense
             @click="layoutModal = false"
             icon="reply"
-            wait-for-ripple
+            v-close-overlay
           />
           <q-toolbar-title>
             {{ selectedSong.name }}
@@ -112,16 +87,19 @@
         </q-toolbar>
         <q-toolbar slot="footer">
           <q-toolbar-title align="center">
-            <q-btn color="primary" @click="layoutModal = false" wait-for-ripple label="Zamknij" />
+            <q-btn color="primary" @click="layoutModal = false" v-close-overlay label="Zamknij" />
           </q-toolbar-title>
         </q-toolbar>
         <div class="layout-padding">
 
-          <p v-for="(line,index) in selectedSong.song" :key="index"> {{ line }}</p>
+        <div style="padding-bottom:10px;font-size:14px" v-for="(line,index) in selectedSong.song" :key="index">
+
+           <div class="inline">{{ splitRow(line,0) }}</div> <div class="inline float-right">{{ splitRow(line,1) }}</div>
+          </div>
+
         </div>
       </q-modal-layout>
     </q-modal>
-
   </q-page>
 
 </template>
@@ -216,6 +194,12 @@ export default {
     this.reloadData()
   },
   methods: {
+     splitRow (str, idx) {
+      // console.log('str=',str);
+      var tab = str.split('#');
+      return tab[idx]
+    },
+
     cutZero (str) {
       return str.replace(/^0+/, '').replace(/^A0+/i, 'A')
     },
@@ -225,8 +209,7 @@ export default {
     showSong (row) {
       var idx = row.id
 
-      this.selectedSong = this.songsTableData.filter((item) => { return item.id === idx })
-      this.selectedSong = (this.selectedSong && this.selectedSong.length > 0) ? this.selectedSong[0] : {}
+      this.selectedSong = row;
       var filename = `statics/${this.pageMeta.songbook}/${this.selectedSong.id}`
 
       this.showProgress()

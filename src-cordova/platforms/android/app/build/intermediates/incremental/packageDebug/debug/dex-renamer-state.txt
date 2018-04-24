@@ -1,4 +1,0 @@
-#Thu Apr 19 12:23:10 CEST 2018
-base.0=C\:\\projekty\\ckpe-songbook\\src-cordova\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

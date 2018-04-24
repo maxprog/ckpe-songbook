@@ -25,7 +25,7 @@ export default [
             icon: 'ion-grid',
             hash: 'btn'
           }
-                 ]
+        ]
       }
     ]
   },
